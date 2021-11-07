@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "895023436578",
+    "project_id": "mechapp-10d97",
+    "storage_bucket": "mechapp-10d97.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:895023436578:android:665845afb77e47e90bcb7b",
+        "android_client_info": {
+          "package_name": "com.mechapp.mechapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "895023436578-q340fkk9uuarhpuqsoknu5r70rsvi4nj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mechapp.mechapp",
+            "certificate_hash": "9abac7b56003424ee419001057b5eb2d6915e1f7"
+          }
+        },
+        {
+          "client_id": "895023436578-h0fep9nfrd5o4rch8ej49tnv4qgc60vu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1EEL-FQcVI0kpKCBBuK6H1JNnYRaneUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "895023436578-h0fep9nfrd5o4rch8ej49tnv4qgc60vu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

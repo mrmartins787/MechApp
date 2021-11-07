@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerLoginRegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/zoomagain"/>
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M-Mech"
+                    android:textColor="#FF9800"
+                    android:textSize="36sp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/fred"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"/>
+            <TextView
+                android:id="@+id/customer_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="43dp"
+                android:text="Customer Login"
+                android:fontFamily="@font/monstermeduim"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="15dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardMaxElevation="10dp"
+                android:measureAllChildren="true"
+                app:cardElevation="10dp">
+
+                <EditText
+                    android:paddingStart="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:id="@+id/customer_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/customer_status"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/monstermeduim"
+                    android:ems="10"
+                    android:background="@drawable/login"
+                    android:hint="Email..."
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:paddingStart="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:id="@+id/customer_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="100dp"
+                    android:fontFamily="@font/monstermeduim"
+                    android:ems="10"
+                    android:background="@drawable/login"
+                    android:hint="Password..."
+                    android:inputType="textPassword"
+                    android:layout_below="@+id/customer_email"
+                    android:layout_alignParentStart="true" />
+
+                <Button
+                    android:id="@+id/customer_login_btn"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/customer_password"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="170dp"
+                    android:layout_marginStart="80dp"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/monstermeduim"
+                    android:textAllCaps="false"
+                    android:backgroundTint="@color/general"
+                    android:background="@drawable/login"
+                    android:text="Login"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/customer_register_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/customer_login_btn"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="230dp"
+                    android:layout_marginStart="60dp"
+                    android:fontFamily="@font/monstermeduim"
+                    android:text="Don't have an Account ?"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textSize="17sp" />
+                <Button
+                    android:id="@+id/customer_register_btn"
+                    android:layout_width="250dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/customer_register_link"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="40dp"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/monstermeduim"
+                    android:layout_marginTop="270dp"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:background="@drawable/login"
+                    android:text="Register"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

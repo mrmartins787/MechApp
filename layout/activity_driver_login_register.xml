@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    tools:context=".DriverLoginRegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/zoomagain"/>
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M-Mech"
+                    android:textColor="#FF9800"
+                    android:textSize="36sp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/fred"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"/>
+            <TextView
+                android:id="@+id/titlr_driver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/driver_email"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="38dp"
+                android:text="Mechanic Login"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/monstermeduim"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="15dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardMaxElevation="10dp"
+                android:measureAllChildren="true"
+                app:cardElevation="10dp">
+            <EditText
+                android:paddingStart="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/driver_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ems="10"
+                android:background="@drawable/login"
+                android:fontFamily="@font/monstermeduim"
+                android:layout_marginTop="20dp"
+                android:hint="Email..."
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:paddingStart="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/driver_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="100dp"
+                android:ems="10"
+                android:fontFamily="@font/monstermeduim"
+                android:background="@drawable/login"
+                android:hint="Password..."
+                android:inputType="textPassword"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/driver_email"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/login_driver_btn"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/login"
+                android:backgroundTint="@color/general"
+                android:text="Login"
+                android:layout_marginStart="80dp"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:layout_marginTop="159dp"
+                android:layout_below="@+id/driver_password"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/create_driver_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/login_driver_btn"
+                android:layout_marginTop="230dp"
+                android:text="Don't have an account?"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/register_driver_btn"
+                android:layout_width="250dp"
+                android:layout_marginBottom="40dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/create_driver_account"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="270dp"
+                android:layout_marginStart="40dp"
+                android:fontFamily="@font/monstermeduim"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:background="@drawable/login"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp" />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

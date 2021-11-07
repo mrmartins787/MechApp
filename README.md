@@ -7,7 +7,7 @@ This is an application that works like Opay and bolt, but the idea of this is to
 
 
 
-<img src="https://user-images.githubusercontent.com/61922605/140640406-c110fc94-8eed-4ddc-95bb-83084e901d0a.png" width="200" height="400" />&nbsp;&nbsp;&nbsp;
+<img src="https://user-images.githubusercontent.com/61922605/140640406-c110fc94-8eed-4ddc-95bb-83084e901d0a.png" width="200" height="400" />
 <img src="https://user-images.githubusercontent.com/61922605/140640245-de68f105-58f7-4c90-8b01-ec38b07d1e0e.png" width="200" height="400" />
 </p>
 
